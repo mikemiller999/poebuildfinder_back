@@ -1,4 +1,44 @@
-POST localhost:3000/sessions HTTP/1.1
+POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
-content
+{
+  "email": "beep@beep.com",
+  "password": "beep"
+}
+
+###
+
+POST http://localhost:3000/save
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg5MDAxMjN9.-yS7HZpewZZMn49QBO0iyTvYVs6eJ8g1Li-oIvKOLeo
+
+{
+}
+
+###
+
+GET http://localhost:3000/characters
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://localhost:3000/characters/1
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://localhost:3000/favorites
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDAxMTMwNDV9.mEvTrU0pJq9jlHUJIRGq-19YCQdikp0uYCoJDoDQu5s
+
+{
+  
+}
